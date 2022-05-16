@@ -1,0 +1,50 @@
+body {
+  margin: 0;
+  height: 100%;
+  background: rgb(253,229,200);
+  background: linear-gradient(180deg, rgba(253,229,200,1) 0%, rgba(244,255,200,1) 13%, rgba(108,199,251,1) 44%, rgba(80,151,255,1) 71%, rgba(109,154,255,1) 87%, rgba(56,217,199,1) 99%);
+}
+
+.container {
+  background-color: #fff;
+  min-height: 100vh;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+
+.task-area {
+  border: 1px solid lightgray;
+}
+.task-tabs {
+  display: flex;
+  border-bottom: 1px solid lightgray;
+  position: relative;
+}
+.task-tabs div {
+  padding: 1em;
+}
+
+/* 움직이는 탭 */
+#under-line {
+  width: 80px;
+  height: 4px;
+  background-color: pink;
+  position: absolute;
+  left: 0;
+  top: 52px;
+  padding: 0;
+}
+
+.task {
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+}
+
+.task-done {
+  text-decoration: line-through;
+}
+
+.task-tabs div {
+  cursor: pointer;
+}
